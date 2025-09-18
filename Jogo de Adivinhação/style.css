@@ -1,0 +1,190 @@
+/* CSS Reset */
+
+body {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #3f7d58;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+p,
+input,
+button {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  display: inline;
+}
+
+/* Container único com todo o conteúdo */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  background-color: #efefef;
+  padding: 20px 20px;
+  margin: 20px;
+  gap: 20px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  width: 1000px;
+}
+
+/* Título e explicação */
+.titulo {
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+}
+
+.explicacao {
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+.explicacaoDetalhe {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Input e Botão */
+
+.input {
+  padding: 20px;
+  width: 100px;
+  justify-self: center;
+  font-size: 2rem;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.botao {
+  padding: 20px;
+  width: 400px;
+  justify-self: center;
+  background-color: rgba(63, 125, 88, 0.2);
+  border: 2px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 2rem;
+}
+
+.botao:hover {
+  background-color: #3f7d58;
+}
+
+/* Dicas e Número de tentativas */
+
+.mensagensTexto {
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+.mensagensDetalhe {
+  color: #000;
+  font-weight: bold;
+}
+
+.tentativasDetalhe {
+  color: #000;
+  font-weight: bold;
+}
+
+.tentativasTexto {
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+/* Retirando o arrow do input number */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+/* Responsividade */
+
+@media (max-width: 1050px) {
+  .container {
+    width: 600px;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .explicacao {
+    font-size: 1rem;
+  }
+
+  .input {
+    padding: 10px;
+    width: 100px;
+    font-size: 1rem;
+    border: 2px solid #000;
+  }
+
+  .botao {
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+  }
+
+  .mensagensTexto {
+    font-size: 1rem;
+  }
+
+  .tentativasTexto {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 400px;
+  }
+
+  .titulo {
+    font-size: 1rem;
+  }
+
+  .explicacao {
+    font-size: 1rem;
+  }
+
+  .input {
+    padding: 10px;
+    width: 50px;
+    font-size: 1rem;
+    border: 2px solid #000;
+  }
+
+  .botao {
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+  }
+
+  .mensagensTexto {
+    font-size: 1rem;
+  }
+
+  .tentativasTexto {
+    font-size: 1rem;
+  }
+}

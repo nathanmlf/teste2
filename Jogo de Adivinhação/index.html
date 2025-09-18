@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Adivinhação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+
+    <h1 class="titulo">Adivinha só!</h1>
+
+    <p class="explicacao">O objetivo jogo é acertar o número aleatório entre 1 e 100. Para isso você deve colocar um número no campo abaixo, logo após isso pressione o botão "Chutar!". Se você acertar o número de primeira será gerada uma mensagem atestando a sua vitória, caso você não tenha acertado o jogo dará dicas sobre o número, mostrando se ele é maior ou menor do que o que foi digitado. Fique atento as dicas e ao número de tentativas restantes, no mais, divirta-se!
+      <span class="explicacaoDetalhe">Digite o número abaixo!</span>
+    </p>
+
+    <input class="input" type="number" id="inputNumero">
+
+    <button class="botao" id="botaoChutar">Chutar!</button>
+
+    <p class="mensagensTexto">Mensagens: <span class="mensagensDetalhe" id="mensagensValor"></span></p>
+
+    <p class="tentativasTexto">Número de tentativas restantes: <span class="tentativasDetalhe" id="tentativasValor"></span></p>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
